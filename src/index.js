@@ -2,6 +2,7 @@ import _ from 'lodash';
 import './style.css';
 // import Icon from './Oslo.jpeg';
 const content = document.querySelector('.content');
+ 
 
 const component = (() => {
 
@@ -19,18 +20,30 @@ const component = (() => {
 
   //Unordered List
   let list = createTag('ul');
-  let listItem1 = createTag('li')
-      listItem1.textContent = "Dining";
+  let Dining = createTag('li')
+      Dining.textContent = "Dining";
 
-  let listItem2 = createTag('li');
-      listItem2.textContent = "Menu";
+  let Menu = createTag('li');
+      Menu.textContent = "Menu";
 
-  let listItem3 = createTag('li');
-      listItem3.textContent = "Contact";
+  let Contact = createTag('li');
+      Contact.textContent = "Contact";
 
-    list.appendChild(listItem1)
-    list.appendChild(listItem2)
-    list.appendChild(listItem3)
+    list.appendChild(Dining)
+    list.appendChild(Menu)
+    list.appendChild(Contact)
+
+    function Events(){
+      Dining.addEventListener('click', ()=>{
+        alert("Its working")
+      })
+      Menu.addEventListener('click', ()=>{
+        alert("Menu Is working")
+      })
+      Contact.addEventListener('click', ()=>{
+        alert("Contact Is working")
+      })
+    }
 
   function AppendElement(){
     main.appendChild(header);
@@ -39,7 +52,7 @@ const component = (() => {
   }
 
 
-  return {AppendElement}
+  return {AppendElement, Events}
 
   // element.innerHTML = _.join(['Hello', 'webpackery'], ' ');
   // const myIcon = new Image();
@@ -48,3 +61,4 @@ const component = (() => {
 })();
 
 content.appendChild(component.AppendElement());
+component.Events()
