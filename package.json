@@ -1,0 +1,27 @@
+{
+  "name": "restaurant-page",
+  "version": "1.0.0",
+  "description": "I used what we’ve learned and take a chance to continue practicing DOM manipulation by dynamically rendering a simple restaurant homepage! At the end, we use use JavaScript alone to generate the entire contents of the website!",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "build": "webpack"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/Haroonabdulrazaq/Restaurant-page.git"
+  },
+  "author": "Haroon",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/Haroonabdulrazaq/Restaurant-page/issues"
+  },
+  "homepage": "https://github.com/Haroonabdulrazaq/Restaurant-page",
+  "devDependencies": {
+    "webpack": "^5.4.0",
+    "webpack-cli": "^4.2.0"
+  },
+  "dependencies": {
+    "lodash": "^4.17.20"
+  }
+}
