@@ -18,17 +18,23 @@ const component = (() => {
   header.classList.add('header');
 
   //Unordered List
-  // let list = createTag('ul');
-  // let listItem1 = createTag('li').textContent = "Dining";
-  // let listItem2 = createTag('li').textContent = "Menu";
-  // let listItem3 = createTag('li').textContent = "Contact";
+  let list = createTag('ul');
+  let listItem1 = createTag('li')
+      listItem1.textContent = "Dining";
 
-  // list.appendChild(listItem1)
+  let listItem2 = createTag('li');
+      listItem2.textContent = "Menu";
+
+  let listItem3 = createTag('li');
+      listItem3.textContent = "Contact";
+
+    list.appendChild(listItem1)
+    list.appendChild(listItem2)
+    list.appendChild(listItem3)
 
   function AppendElement(){
     main.appendChild(header);
-    // main.appendChild(list);
-
+    main.appendChild(list);
     return main;
   }
 
