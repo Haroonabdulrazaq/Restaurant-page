@@ -1,4 +1,25 @@
-.hello {
-  color: red;
-  font-weight: bold;
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+  color: white;
+}
+
+body {
+  background: url('./Oslo.jpg')no-repeat;
+  background-size: cover;
+  background-position: center;
+  height: 100vh;
+}
+
+ /* .content {
+
+} */
+
+.header {
+  font-size: 5em;
+ font-weight: bold;
+ text-align: center;
+ padding-top: .2em;
+ border: 2px solid red;
 }
