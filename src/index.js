@@ -79,6 +79,7 @@ const component = (() => {
     main.appendChild(header);
     main.appendChild(list);
     main.appendChild(dining.diningContent())
+    
     return main;
   }
 

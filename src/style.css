@@ -2,7 +2,6 @@
   padding: 0;
   margin: 0;
   box-sizing: border-box;
-  color: white;
 }
 
 body {
@@ -10,6 +9,7 @@ body {
   background-size: cover;
   background-position: center;
   height: 100vh;
+  color: white;
 }
 
  /* .content {
@@ -56,10 +56,8 @@ ul li {
 form {
 display: flex;
 flex-direction: column;
-justify-content: center;
+justify-content: space-around;
 align-items: center;
-padding: .5em;
-margin-top: 5em;
 }
 
 form input {
@@ -69,11 +67,12 @@ form input {
   border: none;
   border-radius: 5px;
   outline: none;
+  color: #3f3f3f;
 }
 
 input::placeholder {
   padding: 1em;
-  color: #3f3f3f;
+
   font-size: 1.5em;
 }
 
@@ -84,5 +83,4 @@ input::placeholder {
   margin: 0 auto;
   cursor: pointer;
   border: none;
-
 }

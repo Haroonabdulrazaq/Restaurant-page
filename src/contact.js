@@ -15,7 +15,7 @@ const contact =(()=>{
   let address = createTag('input');
   let button = createTag('input');
 
-  subHeader.textContent="...Place yurOrder now"
+  subHeader.textContent="...Place your Order now"
 
   name.setAttribute('type', 'text' );
   name.setAttribute('placeholder', 'Username' );
@@ -40,6 +40,7 @@ const contact =(()=>{
   form.appendChild(address)
   form.appendChild(button)
 
+  contactDiv.classList.add('diningDiv')
 
   function contactContent(){
     contactDiv.appendChild(form);
