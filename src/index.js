@@ -1,5 +1,7 @@
 import _ from 'lodash';
 import './style.css';
+import dining from './dining'
+
 // import Icon from './Oslo.jpeg';
 const content = document.querySelector('.content');
  
@@ -35,19 +37,26 @@ const component = (() => {
 
     function Events(){
       Dining.addEventListener('click', ()=>{
-        alert("Its working")
+        main.removeChild(dining.diningContent())
+        // main.removeChild(dining.contactContent())
+        // main.appendChild(dining.menuContent())
       })
       Menu.addEventListener('click', ()=>{
-        alert("Menu Is working")
+        // main.removeChild(dining.diningContent())
+        // main.removeChild(dining.contactContent())
+        // main.appendChild(dining.menuContent())
       })
       Contact.addEventListener('click', ()=>{
-        alert("Contact Is working")
+        // main.removeChild(dining.diningContent())
+        // main.removeChild(dining.menuContent())
+        // main.appendChild(dining.contactContent())
       })
     }
 
   function AppendElement(){
     main.appendChild(header);
     main.appendChild(list);
+    main.appendChild(dining.diningContent())
     return main;
   }
 
