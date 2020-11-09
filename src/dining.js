@@ -9,7 +9,7 @@ const dining =(()=>{
 
     let para = createTag('p');
     para.textContent = `Oslo Diner is the best Dining in the world, 
-    we have been rated by bater rater 9 times in the last decades as the best,
+    we have been rated by bater-rater 9 times in the last decades as the best,
     We deliver all kind of delicacies to your door steps for no added charges.
     Check out our menu and place your order today.
     Oslo Diner is the best Dining in the world, 

@@ -37,11 +37,15 @@ ul li {
   cursor: pointer;
 }
 
+.listItem {
+  background: rgba(0, 0, 0, 0.322);
+}
+
 .diningDiv {
   background: rgba(0, 0, 0, 0.322);
   font-size: 1.5em;
   line-height: 1.7;
   text-align: center;
-  width: 70%;
-  margin: 5em auto;
+  height: 79vh;
+  padding: 5em;
 }

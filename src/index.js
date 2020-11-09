@@ -22,14 +22,18 @@ const component = (() => {
 
   //Unordered List
   let list = createTag('ul');
+
   let Dining = createTag('li')
       Dining.textContent = "Dining";
+      Dining.classList.add("listItem")
 
   let Menu = createTag('li');
       Menu.textContent = "Menu";
+      Menu.classList.add("listItem")
 
   let Contact = createTag('li');
       Contact.textContent = "Contact";
+      Contact.classList.add("listItem")
 
     list.appendChild(Dining)
     list.appendChild(Menu)
@@ -37,19 +41,31 @@ const component = (() => {
 
     function Events(){
       Dining.addEventListener('click', ()=>{
-        main.removeChild(dining.diningContent())
+        // main.removeChild(dining.menuContent())
         // main.removeChild(dining.contactContent())
-        // main.appendChild(dining.menuContent())
+        main.appendChild(dining.diningContent())
+
+        Dining.classList.remove('listItem')
+        Menu.classList.add('listItem')
+        Contact.classList.add('listItem')
       })
       Menu.addEventListener('click', ()=>{
-        // main.removeChild(dining.diningContent())
+         main.removeChild(dining.diningContent())
+         alert("Menu is working")
         // main.removeChild(dining.contactContent())
         // main.appendChild(dining.menuContent())
+        Dining.classList.add('listItem')
+        Menu.classList.remove('listItem')
+        Contact.classList.add('listItem')
       })
       Contact.addEventListener('click', ()=>{
-        // main.removeChild(dining.diningContent())
+         main.removeChild(dining.diningContent())
+         alert("contact is working")
         // main.removeChild(dining.menuContent())
         // main.appendChild(dining.contactContent())
+        Dining.classList.add('listItem')
+        Menu.classList.add('listItem')
+        Contact.classList.remove('listItem')
       })
     }
 
