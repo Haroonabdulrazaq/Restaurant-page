@@ -49,3 +49,40 @@ ul li {
   height: 79vh;
   padding: 5em;
 }
+
+
+/* Contact */
+
+form {
+display: flex;
+flex-direction: column;
+justify-content: center;
+align-items: center;
+padding: .5em;
+margin-top: 5em;
+}
+
+form input {
+  width: 50%;
+  height: 3em;
+  margin: .5em;
+  border: none;
+  border-radius: 5px;
+  outline: none;
+}
+
+input::placeholder {
+  padding: 1em;
+  color: #3f3f3f;
+  font-size: 1.5em;
+}
+
+.button {
+  width: 5em;
+  color: white;
+  background: cornflowerblue;
+  margin: 0 auto;
+  cursor: pointer;
+  border: none;
+
+}

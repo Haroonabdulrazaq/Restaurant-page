@@ -1,6 +1,7 @@
 import _ from 'lodash';
 import './style.css';
 import dining from './dining'
+import contact from './contact'
 
 // import Icon from './Oslo.jpeg';
 const content = document.querySelector('.content');
@@ -41,28 +42,33 @@ const component = (() => {
 
     function Events(){
       Dining.addEventListener('click', ()=>{
-        // main.removeChild(dining.menuContent())
-        // main.removeChild(dining.contactContent())
+        // alert("Dining is working")
+        main.removeChild(contact.contactContent())
         main.appendChild(dining.diningContent())
+        // main.removeChild(dining.menuContent())
 
         Dining.classList.remove('listItem')
         Menu.classList.add('listItem')
         Contact.classList.add('listItem')
       })
+
       Menu.addEventListener('click', ()=>{
-         main.removeChild(dining.diningContent())
-         alert("Menu is working")
-        // main.removeChild(dining.contactContent())
-        // main.appendChild(dining.menuContent())
+        //  main.removeChild(dining.diningContent())
+        //  main.removeChild(contact.contactContent())
+        //  main.appendChild(menu.menuContent())
+           alert("Menu is working")
+
         Dining.classList.add('listItem')
         Menu.classList.remove('listItem')
         Contact.classList.add('listItem')
       })
+
       Contact.addEventListener('click', ()=>{
+        // alert("Contact is working")
          main.removeChild(dining.diningContent())
-         alert("contact is working")
-        // main.removeChild(dining.menuContent())
-        // main.appendChild(dining.contactContent())
+         main.appendChild(contact.contactContent())
+        //  main.removeChild(menu.menuContent())
+
         Dining.classList.add('listItem')
         Menu.classList.add('listItem')
         Contact.classList.remove('listItem')
