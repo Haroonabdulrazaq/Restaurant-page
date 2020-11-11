@@ -25,7 +25,7 @@ const component = (() => {
 
   //Header tag
   let header = createTag('h1')
-  header.textContent = "Oslo Diner";
+  header.textContent = "Oslo Dinery";
   header.classList.add('header');
 
   //Navigation Unordered List

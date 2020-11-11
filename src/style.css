@@ -101,14 +101,41 @@ input:not(:last-child) {
 }
 
 .delicacy {
-  background: orange;
+  background: rgba(255, 255, 255, 0.78);
   height: 15em;
   width: 30%;
   border-radius: 5px;
+  padding: 5px;
+}
+
+.delicacy img {
+  width: 100%;
+  height: 50%;
+}
+
+.order-btn {
+  width: 100%;
+  cursor: pointer;
+  background:#5643fa;
+  font-size: 1em;
+  border-radius: 3px;
+  border: none;
+  padding: 0.5em 1em;
+  color: white;
+}
+
+.order-btn:hover {
+  color:#5643fa;
+  background: white;
+  border: 1px solid #5643fa;
+  }
+
+.price-text {
+  font-size: 1em;
+  color: #3f3f3f;
 }
 
 .menu-list {
-  background: red;
   display: flex;
   flex-direction: row;
   justify-content: space-around;
