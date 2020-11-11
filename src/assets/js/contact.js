@@ -43,7 +43,6 @@ const contact = (() => {
 
   function contactContent() {
     contactDiv.appendChild(form);
-    // contactDiv.classList.add('contactDiv');
 
     return contactDiv;
   }
