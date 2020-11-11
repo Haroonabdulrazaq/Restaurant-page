@@ -43,7 +43,7 @@ const component = (() => {
   list.appendChild(Contact);
 
 
-  function Events() {
+  const Events=() =>{
     Dining.addEventListener('click', () => {
       Dining.classList.add('listItem');
       Menu.classList.remove('listItem');
@@ -75,7 +75,7 @@ const component = (() => {
     });
   }
 
-  function AppendElement() {
+  const AppendElement=()=> {
     main.appendChild(list);
     main.appendChild(header);
     main.appendChild(welcome);
