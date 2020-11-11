@@ -34,8 +34,6 @@ To get a local copy up and running follow these simple example steps.
    - <code> npm run dev </code> To run project in dveleopment mode.
    - <code> ./node_modules/.bin/webpack --watch </code> To watch files
 
-  ##Usage
-- Run npm run dev or yarn dev or npm start
 
 ## Authors
 
