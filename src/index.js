@@ -1,87 +1,84 @@
-import _ from 'lodash';
 import './assets/stylesheet/style.css';
 import dining from './assets/js/dining';
 import contact from './assets/js/contact';
 import menu from './assets/js/menu';
 
 const content = document.querySelector('.content');
- 
+
 
 const component = (() => {
-
-  function createTag(type){
-    let element = document.createElement(type);
+  function createTag(type) {
+    const element = document.createElement(type);
 
     return element;
   }
-  let main = createTag('main');
-  let display = createTag('div');
-  let welcome = createTag('div');
+  const main = createTag('main');
+  const display = createTag('div');
+  const welcome = createTag('div');
   welcome.classList.add('diningDiv');
   welcome.innerHTML = `<h3>Welcome to Oslo diner</h3>
   <p> Click on our Menu to see varieties of delicacies avaliable and Order now</p>
-  <p> You can also contact us by clicking on contact </p>`
+  <p> You can also contact us by clicking on contact </p>`;
 
 
-  //Header tag
-  let header = createTag('h1')
-  header.textContent = "Oslo Dinery";
+  // Header tag
+  const header = createTag('h1');
+  header.textContent = 'Oslo Dinery';
   header.classList.add('header');
 
-  //Navigation Unordered List
-  let list = createTag('ul');
+  // Navigation Unordered List
+  const list = createTag('ul');
 
-  let Dining = createTag('li')
-      Dining.textContent = "Dining";
+  const Dining = createTag('li');
+  Dining.textContent = 'Dining';
 
-  let Menu = createTag('li');
-      Menu.textContent = "Menu";
+  const Menu = createTag('li');
+  Menu.textContent = 'Menu';
 
-  let Contact = createTag('li');
-      Contact.textContent = "Contact";
+  const Contact = createTag('li');
+  Contact.textContent = 'Contact';
 
-    list.appendChild(Dining)
-    list.appendChild(Menu)
-    list.appendChild(Contact)
+  list.appendChild(Dining);
+  list.appendChild(Menu);
+  list.appendChild(Contact);
 
 
+  function Events() {
+    Dining.addEventListener('click', () => {
+      //  alert("Dining is working")
+      Dining.classList.add('listItem');
+      Menu.classList.remove('listItem');
+      Contact.classList.remove('listItem');
+      welcome.classList.add('display-none');
 
-    function Events(){
-      Dining.addEventListener('click', ()=>{
-        //  alert("Dining is working")
-        Dining.classList.add('listItem')
-        Menu.classList.remove('listItem')
-        Contact.classList.remove('listItem')
-        welcome.classList.add('display-none')
-        
-        display.innerHTML = ''
-        display.appendChild(dining.diningContent())
-      })
+      display.innerHTML = '';
+      display.appendChild(dining.diningContent());
+    });
 
-        Contact.addEventListener('click', ()=>{
-        //  alert("Contact is working")
-        Dining.classList.remove('listItem')
-        Menu.classList.remove('listItem')
-        Contact.classList.add('listItem')
-        welcome.classList.add('display-none')
+    Contact.addEventListener('click', () => {
+      //  alert("Contact is working")
+      Dining.classList.remove('listItem');
+      Menu.classList.remove('listItem');
+      Contact.classList.add('listItem');
+      welcome.classList.add('display-none');
 
-        display.innerHTML = ''
-        display.appendChild(contact.contactContent())
-      })
+      display.innerHTML = '';
+      display.appendChild(contact.contactContent());
+    });
 
-      Menu.addEventListener('click', ()=>{
-        //  alert("Menu is working")
-        Dining.classList.remove('listItem')
-        Menu.classList.add('listItem')
-        Contact.classList.remove('listItem')
-        welcome.classList.add('display-none')
+    Menu.addEventListener('click', () => {
+      //  alert("Menu is working")
+      Dining.classList.remove('listItem');
+      Menu.classList.add('listItem');
+      Contact.classList.remove('listItem');
+      welcome.classList.add('display-none');
 
-        display.innerHTML = '';
-        display.appendChild(menu.menuContent());
-      })
-    }
+      display.innerHTML = '';
+      display.appendChild(menu.menuContent());
+    });
+  }
 
-  function AppendElement(){   
+  function AppendElement() {
     main.appendChild(list);
     main.appendChild(header);
     main.appendChild(welcome);
@@ -91,12 +88,11 @@ const component = (() => {
   }
 
 
-  return {AppendElement, Events}
+  return { AppendElement, Events };
 
   // element.innerHTML = _.join(['Hello', 'webpackery'], ' ');
   // const myIcon = new Image();
-
 })();
 
 content.appendChild(component.AppendElement());
-content.appendChild(component.Events())
+content.appendChild(component.Events());
