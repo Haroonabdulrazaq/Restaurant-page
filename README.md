@@ -13,7 +13,7 @@ I used what I’ve learned and take a chance to continue practicing DOM manipula
 - HTML
 - CSS
 - Javascript(ES6)
-- Webpack4
+- Webpack5
 
 ## Prerequisites
 - You need to have node already installed with npm
