@@ -1,5 +1,5 @@
 # Restaurant-page (Oslo-diner)
-I used what we’ve learned and take a chance to continue practicing DOM manipulation by dynamically rendering a simple restaurant homepage! At the end, we use JavaScript alone to generate the entire contents of the website!
+I used what I’ve learned and take a chance to continue practicing DOM manipulation by dynamically rendering a simple restaurant homepage! At the end, we use JavaScript alone to generate the entire contents of the website!
  
 
 ![screenshot](./src/assets/img/screenshot.png)
