@@ -32,7 +32,7 @@ To get a local copy up and running follow these simple example steps.
 7. Watch the file with
     <code> npm init </code> To install all package dependencies.
     <code> npm run build </code> To run webconfig script
-    <code> ./node_modules/.bin/webpack --watch </code>
+    <code> ./node_modules/.bin/webpack --watch </code> To watch files
 
 ## Authors
 
