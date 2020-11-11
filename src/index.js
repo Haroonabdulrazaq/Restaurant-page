@@ -43,7 +43,7 @@ const component = (() => {
   list.appendChild(Contact);
 
 
-  const Events=() =>{
+  const Events = () => {
     Dining.addEventListener('click', () => {
       Dining.classList.add('listItem');
       Menu.classList.remove('listItem');
@@ -73,16 +73,16 @@ const component = (() => {
       display.innerHTML = '';
       display.appendChild(menu.menuContent());
     });
-  }
+  };
 
-  const AppendElement=()=> {
+  const AppendElement = () => {
     main.appendChild(list);
     main.appendChild(header);
     main.appendChild(welcome);
     main.appendChild(display);
 
     return main;
-  }
+  };
 
 
   return { AppendElement, Events };
