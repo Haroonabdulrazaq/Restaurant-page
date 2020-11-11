@@ -1,6 +1,6 @@
 import saladPic from '../img/salad.jpg';
-import fryPic from '../img/pie.jpeg';
-import piePic from '../img/fry.jpeg';
+import piePic from '../img/pie.jpeg';
+import fryPic from '../img/fry.jpeg';
 
 const menu = (() => {
   const createTag = (type) => {
