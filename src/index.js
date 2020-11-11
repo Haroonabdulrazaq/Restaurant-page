@@ -45,7 +45,6 @@ const component = (() => {
 
   function Events() {
     Dining.addEventListener('click', () => {
-      //  alert("Dining is working")
       Dining.classList.add('listItem');
       Menu.classList.remove('listItem');
       Contact.classList.remove('listItem');
@@ -56,7 +55,6 @@ const component = (() => {
     });
 
     Contact.addEventListener('click', () => {
-      //  alert("Contact is working")
       Dining.classList.remove('listItem');
       Menu.classList.remove('listItem');
       Contact.classList.add('listItem');
@@ -67,7 +65,6 @@ const component = (() => {
     });
 
     Menu.addEventListener('click', () => {
-      //  alert("Menu is working")
       Dining.classList.remove('listItem');
       Menu.classList.add('listItem');
       Contact.classList.remove('listItem');
@@ -89,9 +86,6 @@ const component = (() => {
 
 
   return { AppendElement, Events };
-
-  // element.innerHTML = _.join(['Hello', 'webpackery'], ' ');
-  // const myIcon = new Image();
 })();
 
 content.appendChild(component.AppendElement());
