@@ -39,8 +39,8 @@ To get a local copy up and running follow these simple example steps.
 
 👤 **Haroon Abdulrazaq**
 
-- Github: [@haroonabdulrazaq](https://github.com/githubhandle)
-- Twitter: [@Hanq_o](https://twitter.com/twitterhandle)
+- Github: [@haroonabdulrazaq](https://github.com/haroonabdulrazaq)
+- Twitter: [@Hanq_o](https://twitter.com/Hanq_o)
 - Linkedin: [Haroonabdulrazaq](https://www.linkedin.com/in/haroonabdulrazaq)
 
 
