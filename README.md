@@ -12,9 +12,11 @@ I used what we’ve learned and take a chance to continue practicing DOM manipul
 
 - HTML
 - CSS
-- Javascript
-- Webpack
+- Javascript(ES6)
+- Webpack4
 
+## Prerequisites
+- You need to have node already installed with npm
 
 ## Getting Started
 
@@ -23,16 +25,17 @@ To get a local copy up and running follow these simple example steps.
 ### Setup
 
 1.  Clone this repository with
-    `git clone https://github.com/Haroonabdulrazaq/Restaurant-page.git` using your terminal or command line.
-2.  Change to the project directory by entering `cd Restaurant-page` in the terminal
-3.  Next open the folder with an IDE like VSCode.
-4.  Install the LiveServer Extension on VSCode.
-5.  Once installed hit the "Go Live" button on the bottom right hand of your editor.
-6.  The application should automatically open in a browser window.
-7.  Watch the file with:
-   - <code> npm init </code> To install all package dependencies.
-   - <code> npm run build </code> To run webconfig script
+   - <code> `git clone https://github.com/Haroonabdulrazaq/Restaurant-page.git` </code>
+2.  Change to the project directory by entering
+    - <code>`cd Restaurant-page` </code>
+3. Open in Editor of choice
+4.  
+   - <code> npm install </code> To install all package dependencies.
+   - <code> npm run dev </code> To run project in dveleopment mode.
    - <code> ./node_modules/.bin/webpack --watch </code> To watch files
+
+  ##Usage
+- Run npm run dev or yarn dev or npm start
 
 ## Authors
 
