@@ -17,9 +17,10 @@ const dining =(()=>{
     We deliver all kind of delicacies to your door steps for no added charges.
     Check out our menu and place your order today.`;
 
+    diningDiv.classList.add('diningDiv');
+
     function diningContent(){
       diningDiv.appendChild(para);
-      diningDiv.classList.add('diningDiv');
 
       return diningDiv;
     }

@@ -1,4 +1,4 @@
-const menu = (()=> {
+const menu =(()=>{
 
   function createTag(type){
     let element = document.createElement(type);
@@ -12,14 +12,13 @@ const menu = (()=> {
   subHeader.textContent = "Menu"
   
   let list = createTag('div');
-
-  let salad = createTag('p');
+  let salad = createTag('div');
   salad.textContent = "Salad"
 
-  let pie = createTag('p');
+  let pie = createTag('div');
   pie.textContent = "Pies"
 
-  let fry = createTag('p');
+  let fry = createTag('div');
   fry.textContent = "Fries"
 
   list.appendChild(salad);

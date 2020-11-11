@@ -16,30 +16,32 @@ const component = (() => {
     return element;
   }
   let main = createTag('main');
+  let display = createTag('div');
+
 
   //Header tag
   let header = createTag('h1')
-  header.textContent = "Oslo Dinert";
+  header.textContent = "Oslo Dinery";
   header.classList.add('header');
 
-  //Unordered List
+  //Navigation Unordered List
   let list = createTag('ul');
 
   let Dining = createTag('li')
       Dining.textContent = "Dining";
-      Dining.classList.remove("listItem")
+      Dining.classList.add("listItem")
 
   let Menu = createTag('li');
       Menu.textContent = "Menu";
-      Menu.classList.remove("listItem")
 
   let Contact = createTag('li');
       Contact.textContent = "Contact";
-      Contact.classList.remove("listItem")
 
     list.appendChild(Dining)
     list.appendChild(Menu)
     list.appendChild(Contact)
+
+
 
     function Events(){
       Dining.addEventListener('click', ()=>{
@@ -47,39 +49,37 @@ const component = (() => {
         Dining.classList.add('listItem')
         Menu.classList.remove('listItem')
         Contact.classList.remove('listItem')
-
-        main.appendChild(dining.diningContent())
-        main.removeChild(contact.contactContent())
-        main.removeChild(menu.menuContent())
+        
+        display.innerHTML = ''
+        display.appendChild(dining.diningContent())
       })
 
         Contact.addEventListener('click', ()=>{
-          // alert("Contact is working")
+        //  alert("Contact is working")
         Dining.classList.remove('listItem')
         Menu.classList.remove('listItem')
         Contact.classList.add('listItem')
 
-        main.appendChild(contact.contactContent())
-        main.removeChild(dining.diningContent())
-        main.removeChild(menu.menuContent())   
+        display.innerHTML = ''
+        display.appendChild(contact.contactContent())
       })
 
       Menu.addEventListener('click', ()=>{
-          //  alert("Menu is working")
+        //  alert("Menu is working")
         Dining.classList.remove('listItem')
         Menu.classList.add('listItem')
         Contact.classList.remove('listItem')
 
-        main.removeChild(contact.contactContent())
-        main.removeChild(dining.diningContent())
-        main.appendChild(menu.menuContent())  
+        display.innerHTML = '';
+        display.appendChild(menu.menuContent());
       })
     }
 
-  function AppendElement(){
-    main.appendChild(header);
+  function AppendElement(){   
     main.appendChild(list);
+    main.appendChild(header);
     main.appendChild(dining.diningContent());
+    main.appendChild(display);
 
     return main;
   }
@@ -94,4 +94,4 @@ const component = (() => {
 })();
 
 content.appendChild(component.AppendElement());
-component.Events()
+content.appendChild(component.Events())
