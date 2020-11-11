@@ -23,7 +23,7 @@ const component = (() => {
 
   // Header tag
   const header = createTag('h1');
-  header.textContent = 'Oslo Dinery';
+  header.textContent = 'Oslo Diner';
   header.classList.add('header');
 
   // Navigation Unordered List
