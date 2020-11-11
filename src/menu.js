@@ -1,3 +1,6 @@
+//  import { orderBy } from 'lodash';
+  import saladImg from './salad.jpg';
+
 const menu =(()=>{
 
   function createTag(type){
@@ -11,25 +14,43 @@ const menu =(()=>{
 
   subHeader.textContent = "Menu"
   
-  let list = createTag('div');
+  let menulist = createTag('div');
+  menulist.classList.add('menu-list')
+
   let salad = createTag('div');
-  salad.textContent = "Salad"
+  salad.classList.add('delicacy');
+  salad.classList.add('recipe-style');
+  let priceOrder = createTag('div')
+  let order = createTag('button');
+  order.textContent = "Order now!"
+  let price = createTag('p');
+  price.textContent = "$4.04"
+  priceOrder.appendChild(price);
+  priceOrder.appendChild(order);
+
+  const saladImg = new Image();
+  saladImg.src = saladImg;
+  salad.appendChild(saladImg);
+  salad.appendChild(priceOrder);
+  
 
   let pie = createTag('div');
+  pie.classList.add('delicacy');
   pie.textContent = "Pies"
 
   let fry = createTag('div');
+  fry.classList.add('delicacy');
   fry.textContent = "Fries"
 
-  list.appendChild(salad);
-  list.appendChild(pie);
-  list.appendChild(fry);
+  menulist.appendChild(salad);
+  menulist.appendChild(pie);
+  menulist.appendChild(fry);
 
-  menuDiv.classList.add('diningDiv');
+  menuDiv.classList.add('diningDiv','menu-div');
 
   function menuContent(){
     menuDiv.appendChild(subHeader)
-    menuDiv.appendChild(list);
+    menuDiv.appendChild(menulist);
 
     return menuDiv;
   }

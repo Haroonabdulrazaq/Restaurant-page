@@ -4,7 +4,6 @@ import dining from './dining';
 import contact from './contact';
 import menu from './menu';
 
-// import Icon from './Oslo.jpeg';
 const content = document.querySelector('.content');
  
 
@@ -17,11 +16,16 @@ const component = (() => {
   }
   let main = createTag('main');
   let display = createTag('div');
+  let welcome = createTag('div');
+  welcome.classList.add('diningDiv');
+  welcome.innerHTML = `<h3>Welcome to Oslo diner</h3>
+  <p> Click on our Menu to see varieties of delicacies avaliable and Order now</p>
+  <p> You can also contact us by clicking on contact </p>`
 
 
   //Header tag
   let header = createTag('h1')
-  header.textContent = "Oslo Dinery";
+  header.textContent = "Oslo Diner";
   header.classList.add('header');
 
   //Navigation Unordered List
@@ -49,6 +53,7 @@ const component = (() => {
         Dining.classList.add('listItem')
         Menu.classList.remove('listItem')
         Contact.classList.remove('listItem')
+        welcome.classList.add('display-none')
         
         display.innerHTML = ''
         display.appendChild(dining.diningContent())
@@ -59,6 +64,7 @@ const component = (() => {
         Dining.classList.remove('listItem')
         Menu.classList.remove('listItem')
         Contact.classList.add('listItem')
+        welcome.classList.add('display-none')
 
         display.innerHTML = ''
         display.appendChild(contact.contactContent())
@@ -69,6 +75,7 @@ const component = (() => {
         Dining.classList.remove('listItem')
         Menu.classList.add('listItem')
         Contact.classList.remove('listItem')
+        welcome.classList.add('display-none')
 
         display.innerHTML = '';
         display.appendChild(menu.menuContent());
@@ -78,7 +85,7 @@ const component = (() => {
   function AppendElement(){   
     main.appendChild(list);
     main.appendChild(header);
-    main.appendChild(dining.diningContent());
+    main.appendChild(welcome);
     main.appendChild(display);
 
     return main;
@@ -89,8 +96,7 @@ const component = (() => {
 
   // element.innerHTML = _.join(['Hello', 'webpackery'], ' ');
   // const myIcon = new Image();
-  // myIcon.src = Icon;
-  // element.appendChild(myIcon);
+
 })();
 
 content.appendChild(component.AppendElement());
