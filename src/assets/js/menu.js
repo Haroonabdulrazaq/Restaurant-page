@@ -1,7 +1,7 @@
 //  import { orderBy } from 'lodash';
-  import saladPic from './salad.jpg';
-  import fryPic from './pie.jpeg';
-  import piePic from './fry.jpeg';
+  import saladPic from '../img/salad.jpg';
+  import fryPic from '../img/pie.jpeg';
+  import piePic from '../img/fry.jpeg';
 
 const menu =(()=>{
 

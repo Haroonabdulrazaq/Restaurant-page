@@ -1,8 +1,8 @@
 import _ from 'lodash';
-import './style.css';
-import dining from './dining';
-import contact from './contact';
-import menu from './menu';
+import './assets/stylesheet/style.css';
+import dining from './assets/js/dining';
+import contact from './assets/js/contact';
+import menu from './assets/js/menu';
 
 const content = document.querySelector('.content');
  
@@ -33,7 +33,6 @@ const component = (() => {
 
   let Dining = createTag('li')
       Dining.textContent = "Dining";
-      Dining.classList.add("listItem")
 
   let Menu = createTag('li');
       Menu.textContent = "Menu";
