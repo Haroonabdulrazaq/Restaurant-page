@@ -29,10 +29,10 @@ To get a local copy up and running follow these simple example steps.
 4.  Install the LiveServer Extension on VSCode.
 5.  Once installed hit the "Go Live" button on the bottom right hand of your editor.
 6.  The application should automatically open in a browser window.
-7. Watch the file with
-    <code> npm init </code> To install all package dependencies.
-    <code> npm run build </code> To run webconfig script
-    <code> ./node_modules/.bin/webpack --watch </code> To watch files
+7.  Watch the file with:
+   - <code> npm init </code> To install all package dependencies.
+   - <code> npm run build </code> To run webconfig script
+   - <code> ./node_modules/.bin/webpack --watch </code> To watch files
 
 ## Authors
 
